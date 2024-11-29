@@ -5,6 +5,7 @@
 }
 
 :root {
+    --darkest-cyan-color: hsl(157.9,42.2%,17.6%);
     --dark-cyan-color: hsl(158, 36%, 37%);
     --cream-color: hsl(30, 38%, 92%);
     --very-dark-blue-color: hsl(212, 21%, 14%);
@@ -113,6 +114,11 @@
     gap: 11px;
 }
 
+.product-preview-card .product-detail button:hover {
+    background-color: var(--darkest-cyan-color);    
+    cursor: pointer;
+}
+
 @media (min-width: 64rem) {
     .product-preview-card {
         width: 600px;    
@@ -144,5 +150,9 @@
     
     .product-preview-card .product-detail p.price {
         margin-bottom: 30px;
+    }
+
+    .product-preview-card .product-detail p.category {
+        margin-bottom: 20px;
     }
 }
